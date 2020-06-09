@@ -1,5 +1,8 @@
 import app from './app';
 
-app.listen(3333, () => {
-  console.log('API NPS Iniciada!');
+const PORT = 3333;
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST, () => {
+  console.log(`API NPS INICIADA`);
 });
