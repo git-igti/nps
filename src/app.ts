@@ -10,10 +10,10 @@ import AppError from './errors/AppError';
 
 createConnection({
   type: "postgres",
-  host: "3.220.242.1",
+  host: process.env.POSTGRES_HOST,
   port: 5432,
-  username: "nps",
-  password: process.env.POSTGRESS_PASSWORD,
+  username: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
   database: "nps",
   "entities": ["./src/models/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
