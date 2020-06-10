@@ -14,11 +14,11 @@ class Nps {
   @Column()
   note: string;
 
+  @Column()
+  email: string;
+
   @CreateDateColumn()
   created_at: Date;
-
-  @UpdateDateColumn()
-  updated_at: Date;
 }
 
 export default Nps;

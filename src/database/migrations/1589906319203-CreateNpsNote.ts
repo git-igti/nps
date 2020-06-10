@@ -18,12 +18,12 @@ export default class CreateNpsNote1589906319203 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: 'created_at',
-            type: 'timestamp',
-            default: 'now()',
+            name: 'email',
+            type: 'varchar',
+            isNullable: false,
           },
           {
-            name: 'updated_at',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },

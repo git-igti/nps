@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import {createConnection} from "typeorm";
 import 'dotenv/config';
+import cors from 'cors';
 
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
@@ -25,6 +26,13 @@ createConnection({
 }).catch(error => console.log(error));
 
 const app = express();
+
+var corsOptions = {
+  origin: 'https://igti.instructure.com',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(routes);
