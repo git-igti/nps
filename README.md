@@ -1,9 +1,9 @@
-<h2 align="center"><img width="150px" src="./src/assets/logo-green.png"></h2>
+<h5 align="center"><img width="150px" src="./src/assets/logo-green.png"></h5>
 
 <h2 align="center">API de Pesquisa NPS</h2>
 <br>
 
-####:pencil: Implementação:
+#### :pencil: Implementação:
 API construida em `Typescript` com conexão ao Banco `Postgres` e dockeirizada em uma imagem totalmente efêmera, criada para receber os dados sensiveis em sua instância.
 Em produção, executando em um servidor apache com certificado SSL que faz o proxy para a porta do `Docker`.
 <br>
