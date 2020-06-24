@@ -9,7 +9,7 @@ API foi para produção, executando em um servidor apache com certificado SSL qu
 
 #### Front-end:
 
-Implementei uma estratégia de cacheamento de dados para controlar a quantidade de requisições feitas ao banco, o script inserido no [Canvas Instructure](https://igti.instructure.com/login/canvas) (AVA Acadêmico) da instituição, é responsável por coletar a identificação e a nota fornecida para pesquisa.
+Implementei uma estratégia de cacheamento de dados para controlar a quantidade de requisições feitas ao banco, o script inserido no [Canvas Instructure](https://igti.instructure.com/login/canvas) (AVA Acadêmico) da instituição, é responsável por coletar a identificação do aluno e a nota fornecida para pesquisa.
 
 
 
