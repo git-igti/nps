@@ -2,9 +2,40 @@
 
 <h2 align="center">API de Pesquisa NPS</h2>
 
+
+<br>
 #### :pencil: Implementação:
 API construida em `Typescript` com conexão ao Banco `Postgres` e dockeirizada em uma imagem totalmente efêmera, criada para receber os dados sensiveis em sua instância.
 API foi para produção, executando em um servidor apache com certificado SSL que faz o proxy para a porta do `Docker`.
+<br>
+
+### Inciando
+
+
+Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguida, execute os comandos abaixos no diretório do arquivo baixado.
+
+<br>
+
+
+#### 1 - Build da imagem
+
+``` js
+docker image build --build-arg POSTGRES_PASSWORD=senha --build-arg POSTGRES_USER=user --build-arg POSTGRES_HOST=host -t igti/nodeapi .
+```
+<br>
+
+#### 2 - Iniciando aplicação
+
+``` js
+docker container run -p 3333:3333 -d igti/nodeapi:latest
+```
+<br>
+
+#### 3 - Para visualizar os logs
+
+``` js
+docker logs igti/nodeapi
+```
 <br>
 
 #### Front-end:

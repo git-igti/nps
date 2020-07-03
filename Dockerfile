@@ -1,8 +1,8 @@
 FROM node:10
 
-RUN git clone https://github.com/Igorryan/api-nps-igti
+RUN git clone https://github.com/git-igti/api-nps
 
-WORKDIR /api-nps-igti
+WORKDIR /api-nps
 
 ARG POSTGRES_USER=non
 ARG POSTGRES_HOST=non
