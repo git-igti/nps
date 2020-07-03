@@ -4,6 +4,7 @@
 
 
 <br>
+
 #### :pencil: Implementação:
 API construida em `Typescript` com conexão ao Banco `Postgres` e dockeirizada em uma imagem totalmente efêmera, criada para receber os dados sensiveis em sua instância.
 API foi para produção, executando em um servidor apache com certificado SSL que faz o proxy para a porta do `Docker`.
