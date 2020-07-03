@@ -13,8 +13,7 @@ API foi para produção, executando em um servidor apache com certificado SSL qu
 ### Inciando
 
 
-Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguida, execute os comandos abaixos no diretório do arquivo baixado.
-
+<p>Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguida, execute os comandos abaixos no diretório do arquivo baixado.</p>
 
 
 
