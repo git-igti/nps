@@ -38,15 +38,6 @@ docker container run -p 3333:3333 -d igti/nodeapi:latest
 docker logs igti/nodeapi
 ```
 <br>
-
-#### Front-end:
-
-Implementei uma estratégia de cacheamento de dados para controlar a quantidade de requisições feitas ao banco, o script inserido no [Canvas Instructure](https://igti.instructure.com/login/canvas) (AVA Acadêmico) da instituição, é responsável por coletar a identificação do aluno e a nota fornecida para pesquisa.
-
-
-
-
-<br>
 <div align="center">
   <sub>Built with ❤︎ by <a href="https://github.com/igorryan">Igor Ryan</a>
 </div>
