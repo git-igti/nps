@@ -15,7 +15,7 @@ API foi para produção, executando em um servidor apache com certificado SSL qu
 
 Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguida, execute os comandos abaixos no diretório do arquivo baixado.
 
-<br>
+
 
 
 #### 1 - Build da imagem
@@ -23,14 +23,12 @@ Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguid
 ``` js
 docker image build --build-arg POSTGRES_PASSWORD=senha --build-arg POSTGRES_USER=user --build-arg POSTGRES_HOST=host -t igti/nodeapi .
 ```
-<br>
 
 #### 2 - Iniciando aplicação
 
 ``` js
 docker container run -p 3333:3333 -d igti/nodeapi:latest
 ```
-<br>
 
 #### 3 - Para visualizar os logs
 
