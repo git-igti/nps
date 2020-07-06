@@ -10,7 +10,7 @@ API construida em `Typescript` com conexão ao Banco `Postgres` e dockeirizada e
 API foi para produção, executando em um servidor apache com certificado SSL que faz o proxy para a porta do `Docker`.
 <br>
 
-### Inciando
+### Iniciando
 
 
 <p>Faça download do arquivo "Dockerfile" disponível neste repositório. Em seguida, execute os comandos abaixo no diretório do Dockerfile.</p>
