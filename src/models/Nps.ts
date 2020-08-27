@@ -2,7 +2,6 @@ import {
   Entity,
   Column,
   CreateDateColumn,
-  UpdateDateColumn,
   PrimaryColumn,
 } from 'typeorm';
 
@@ -13,6 +12,9 @@ class Nps {
 
   @Column()
   note: string;
+
+  @Column()
+  comment: string
 
   @Column()
   email: string;

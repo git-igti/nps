@@ -16,11 +16,11 @@ class NpsController {
   }
 
   public async create(request: Request, response: Response): Promise<Response> {
-    const { id, email, note } = request.body;
+    const { id, email, note, comment } = request.body;
 
     const npsRepository = getRepository(Nps);
 
-    const userVoted = npsRepository.create({ id, email, note });
+    const userVoted = npsRepository.create({ id, email, note, comment });
 
     await npsRepository.save(userVoted);
 
