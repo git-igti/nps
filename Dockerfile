@@ -1,6 +1,6 @@
 FROM node:10
 
-RUN git clone https://github.com/git-igti/api-nps
+RUN git clone https://github.com/Igorryan/api-nps
 
 WORKDIR /api-nps
 
