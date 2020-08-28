@@ -11,27 +11,11 @@ import AppError from './errors/AppError';
 
 createConnection();
 
-// createConnection({
-//   type: "postgres",
-//   host: 'zend.caed5pjln3xt.us-east-1.rds.amazonaws.com',
-//   port: 5432,
-//   username: 'nps',
-//   password: 'Pesquisa@IGTI@NPS10',
-//   database: "nps",
-//   entities: ["./src/models/*.ts"],
-//   migrations: ["./src/database/migrations/*.ts"],
-//   cli: {
-//     "migrationsDir": "./src/database/migrations"
-//   }
-// }).then(connection => {
-//   console.log('Conexão com banco bem sucedida');
-// }).catch(error => console.log(error));
-
 const app = express();
 
 var corsOptions = {
   origin: 'https://igti.instructure.com',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  optionsSuccessStatus: 200
 }
 
 app.use(cors(corsOptions));
