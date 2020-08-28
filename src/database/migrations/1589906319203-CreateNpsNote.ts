@@ -23,11 +23,6 @@ export default class CreateNpsNote1589906319203 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: 'comment',
-            type: 'varchar',
-            isNullable: true,
-          },
-          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',

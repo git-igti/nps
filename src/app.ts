@@ -9,21 +9,23 @@ import 'express-async-errors';
 import routes from './routes';
 import AppError from './errors/AppError';
 
-createConnection({
-  type: "postgres",
-  host: process.env.POSTGRES_HOST,
-  port: 5432,
-  username: process.env.POSTGRES_USER,
-  password: process.env.POSTGRES_PASSWORD,
-  database: "nps",
-  "entities": ["./src/models/*.ts"],
-  "migrations": ["./src/database/migrations/*.ts"],
-  "cli": {
-    "migrationsDir": "./src/database/migrations"
-  }
-}).then(connection => {
-  console.log('Conexão com banco bem sucedida');
-}).catch(error => console.log(error));
+createConnection();
+
+// createConnection({
+//   type: "postgres",
+//   host: 'zend.caed5pjln3xt.us-east-1.rds.amazonaws.com',
+//   port: 5432,
+//   username: 'nps',
+//   password: 'Pesquisa@IGTI@NPS10',
+//   database: "nps",
+//   entities: ["./src/models/*.ts"],
+//   migrations: ["./src/database/migrations/*.ts"],
+//   cli: {
+//     "migrationsDir": "./src/database/migrations"
+//   }
+// }).then(connection => {
+//   console.log('Conexão com banco bem sucedida');
+// }).catch(error => console.log(error));
 
 const app = express();
 
